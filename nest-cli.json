@@ -1,0 +1,38 @@
+{
+  "projects": {
+    "common": {
+      "type": "library",
+      "root": "libs/common",
+      "entryFile": "index",
+      "sourceRoot": "libs/common/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/common/tsconfig.lib.json"
+      }
+    },
+    "ac": {
+      "type": "application",
+      "root": "apps/ac",
+      "entryFile": "main",
+      "sourceRoot": "apps/ac/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/ac/tsconfig.app.json"
+      }
+    },
+    "url-shortener": {
+      "type": "application",
+      "root": "apps/url-shortener",
+      "entryFile": "main",
+      "sourceRoot": "apps/url-shortener/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/url-shortener/tsconfig.app.json"
+      }
+    }
+  },
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/ac/tsconfig.app.json"
+  },
+  "monorepo": true,
+  "root": "apps/ac",
+  "sourceRoot": "apps/ac/src"
+}
